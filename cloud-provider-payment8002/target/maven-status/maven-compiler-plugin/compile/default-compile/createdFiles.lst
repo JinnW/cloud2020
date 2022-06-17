@@ -1,0 +1,5 @@
+com\brilliant\springcloud\controller\PaymentController.class
+com\brilliant\springcloud\service\PaymentService.class
+com\brilliant\springcloud\service\PaymentServiceImp.class
+com\brilliant\springcloud\PaymentMain8002.class
+com\brilliant\springcloud\dao\PaymentDao.class
