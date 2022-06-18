@@ -39,7 +39,7 @@ public class PaymentController {
         int result = paymentService.create(payment);
         log.info("************插入结果"+result);
         if (result>0){
-            return new CommonResult(200, "数据插入成功！接口为"+serverPort,result);
+            return new CommonResult(200, "数据插入成功！端口为"+serverPort,result);
         }else{
             return new CommonResult(444, "数据插入失败！",null);
         }
@@ -50,7 +50,7 @@ public class PaymentController {
         Payment payment = paymentService.getPaymentById(id);
         log.info("************查询结果"+payment);
         if (payment != null){
-            return new CommonResult(200, "数据查询成功！接口为"+serverPort,payment);
+            return new CommonResult(200, "数据查询成功！端口为"+serverPort,payment);
         }else{
             return new CommonResult(444, "数据插入失败！",null);
         }
